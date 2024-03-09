@@ -18,7 +18,6 @@ def get_days_from_today(date: str) -> int:
         return days_difference
     except ValueError:
         print("Неправильний формат дати. Введіть дату у форматі 'РРРР-ММ-ДД'.")
-        return None
 
 
-get_days_from_today("")
+get_days_from_today("2022-12-24")
