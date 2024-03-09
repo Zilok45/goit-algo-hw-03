@@ -6,8 +6,15 @@ def get_days_from_today(date: str) -> int:
     today_date = datetime.today()
     date_difference = today_date - date_obj
     days_difference = date_difference.days
-    print(f"Різниця у днях: {days_difference} днів")
+
+    if days_difference == 1:
+        print(f"Різниця у днях: {days_difference} дeнь")
+    elif 1 < days_difference <= 4:
+        print(f"Різниця у днях: {days_difference} дні")
+    else:
+        print(f"Різниця у днях: {days_difference} днів")
+
     return days_difference
 
 
-get_days_from_today("2025-01-09")
+get_days_from_today("2024-03-09")
